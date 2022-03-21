@@ -1,50 +1,81 @@
-body, html {
-    height: 100%;
-  }
-  
-  * {
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-  
-  .bg-img {
-    background-image: url("../Imagenes/Setup\ 4\ .jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .container {
-    position: center;
-    margin: 20px;
-    max-width: 300px;
-    padding: 16px;
+}
+
+body{
+    background-color: #5469d4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-contact{
     background-color: white;
-  }
-  
-    input[type=text], input[type=password] {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px rgba(0,0,0. .8);
+    
+}
+header{
     width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-    .btn {
-    background-color: #04AA6D;
+    background-color: blue;
+    overflow: hidden;
     color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
+
+}
+header span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+
+}
+.contact{
+    padding: .8rem;
+    overflow: hidden;
+    color: gray;
+
+}
+
+.contact label, .contact input, .contact textarea{
+    display: block;
     width: 100%;
-    opacity: 0.9;
-  }
-  
-  .btn:hover {
-    opacity: 1;
-  }
+    margin-bottom: 8px;
+
+}
+
+.contact label{
+    font-weight: 700;
+}
+.contact input:not([type='submit']), .contact textarea{
+    border: none;
+    border-bottom: 2px solid red;
+    margin-bottom: 0cm;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+
+}
+.contact textarea{
+    min-height: 100px;
+
+}
+input[type='submit']{
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+input[type='reset']{
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
